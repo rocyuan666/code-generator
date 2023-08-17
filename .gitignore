@@ -1,3 +1,4 @@
 /out
+!/out/.gitkeep
 node_modules
 package-lock.json
