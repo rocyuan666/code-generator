@@ -27,13 +27,13 @@ async function main() {
     renderTemplate(
       templatePath('index.vue3.ejs'),
       data,
-      outFilePath(`vue/view/${snakeFormatHump(table.TABLE_NAME)}/index.vue`),
+      outFilePath(`${cfg.projectName}/vue/view/${snakeFormatHump(table.TABLE_NAME)}/index.vue`),
     )
     // 生成js文件
     renderTemplate(
       templatePath('api.ejs'),
       data,
-      outFilePath(`vue/api/${snakeFormatHump(table.TABLE_NAME)}.js`),
+      outFilePath(`${cfg.projectName}/vue/api/${snakeFormatHump(table.TABLE_NAME)}.js`),
     )
   }
 }
