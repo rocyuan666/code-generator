@@ -1,4 +1,4 @@
-import { renderTemplate, templatePath, outFilePath } from "./common/utils.js";
+import { renderTemplate, templatePath, outFilePath, snakeFormatHump } from "./common/utils.js";
 import Db from "./common/Db.js";
 import cfg from "./config.js";
 import mysqlToJs from "./map/mysqlToJs.js";
@@ -19,11 +19,14 @@ async function main() {
       table,
       columns,
       mysqlToJs,
+      fn: {
+        snakeFormatHump,
+      },
     };
     // 生成vue文件
-    renderTemplate(templatePath("index.vue3.ejs"), data, outFilePath(`vue/view/${table.TABLE_NAME}/index.vue`));
+    renderTemplate(templatePath("index.vue3.ejs"), data, outFilePath(`vue/view/${snakeFormatHump(table.TABLE_NAME)}/index.vue`));
     // 生成js文件
-    renderTemplate(templatePath("api.ejs"), data, outFilePath(`vue/api/${table.TABLE_NAME}.js`));
+    renderTemplate(templatePath("api.ejs"), data, outFilePath(`vue/api/${snakeFormatHump(table.TABLE_NAME)}.js`));
   }
 }
 await main();
