@@ -1,6 +1,7 @@
 import { renderTemplate, templatePath, outFilePath } from "./common/utils.js";
 import Db from "./common/Db.js";
 import cfg from "./config.js";
+import mysqlToJs from "./map/mysqlToJs.js";
 import "./types/index.js";
 
 async function main() {
@@ -17,6 +18,7 @@ async function main() {
     const data = {
       table,
       columns,
+      mysqlToJs,
     };
     // 生成vue文件
     renderTemplate(templatePath("index.vue3.ejs"), data, outFilePath(`vue/view/${table.TABLE_NAME}/index.vue`));

@@ -1,6 +1,6 @@
 /**
  * @typedef <%= table.TABLE_NAME %> - <%= table.TABLE_COMMENT %>
  <%_ for(let i = 0; i < columns.length; i++) { _%>
- * @property {<%= columns[i].DATA_TYPE %>} <%= columns[i].COLUMN_NAME %> - <%= columns[i].COLUMN_COMMENT %>
+ * @property {<%= mysqlToJs[columns[i].DATA_TYPE] %>} <%= columns[i].COLUMN_NAME %> - <%= columns[i].COLUMN_COMMENT %>
  <%_ } _%>
 */
