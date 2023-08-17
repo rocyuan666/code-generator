@@ -7,7 +7,7 @@
  * @property {String} db.user - 用户名
  * @property {String} db.password - 密码
  * @property {String} projectName - 项目名
- * @property {String[]} genTables - 需要生成的表名
+ * @property {String[] || String} genTables - 需要生成的表名  '*': 所有表
  */
 
 export default {
@@ -19,5 +19,6 @@ export default {
     password: 'root',
   },
   projectName: 'xxx项目',
+  // genTables: '*',
   genTables: ['device'],
 }

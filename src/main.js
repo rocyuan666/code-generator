@@ -10,7 +10,7 @@ async function main() {
   const tables = [...(await Db.getTables())]
 
   for (let table of tables) {
-    const isGenerate = generateTableNames.includes(table.TABLE_NAME)
+    const isGenerate = generateTableNames == '*' || generateTableNames.includes(table.TABLE_NAME)
     if (!isGenerate) continue
     /**@type {ColumnsInfo[]} */
     const columns = await Db.getColumns(table.TABLE_NAME)
