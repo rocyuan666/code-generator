@@ -9,6 +9,9 @@
 `/out` 生成代码的文件目录
 
 ```bash
+# 安装依赖
+npm install
+
 # 执行命令生成代码
 npm start
 ```

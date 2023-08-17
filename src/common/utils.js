@@ -1,10 +1,10 @@
-import path from "path";
-import ejs from "ejs";
-import fse from "fs-extra";
-import { fileURLToPath } from "url";
+import path from 'path'
+import ejs from 'ejs'
+import fse from 'fs-extra'
+import { fileURLToPath } from 'url'
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 /**
  *
@@ -14,9 +14,9 @@ const __dirname = path.dirname(__filename);
  */
 export async function renderTemplate(path, data, outFilePath) {
   ejs.renderFile(path, data, (err, str) => {
-    if (err) return console.log("发生错误：", err);
-    fse.outputFileSync(outFilePath, str);
-  });
+    if (err) return console.log('发生错误：', err)
+    fse.outputFileSync(outFilePath, str)
+  })
 }
 
 /**
@@ -25,7 +25,7 @@ export async function renderTemplate(path, data, outFilePath) {
  * @returns {String} - 完整的模板目录
  */
 export function templatePath(tpPath) {
-  return path.join(__dirname, "../", "template", tpPath);
+  return path.join(__dirname, '../', 'template', tpPath)
 }
 
 /**
@@ -34,7 +34,7 @@ export function templatePath(tpPath) {
  * @returns {String} - 完整的输出文件路径
  */
 export function outFilePath(ofPath) {
-  return path.join(__dirname, "../../", "out", ofPath);
+  return path.join(__dirname, '../../', 'out', ofPath)
 }
 
 /**
@@ -44,13 +44,13 @@ export function outFilePath(ofPath) {
  * @returns
  */
 export function snakeFormatHump(snakeName, isBig = false) {
-  let humpName = "";
-  const snakeNames = snakeName.split("_");
+  let humpName = ''
+  const snakeNames = snakeName.split('_')
   snakeNames.forEach((snakeSplit, index) => {
     if (isBig || index > 0) {
-      snakeSplit = snakeSplit[0].toUpperCase() + snakeSplit.substring(1);
+      snakeSplit = snakeSplit[0].toUpperCase() + snakeSplit.substring(1)
     }
-    humpName += snakeSplit;
-  });
-  return humpName;
+    humpName += snakeSplit
+  })
+  return humpName
 }

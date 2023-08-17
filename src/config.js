@@ -11,11 +11,11 @@
 
 export default {
   db: {
-    host: "localhost",
+    host: 'localhost',
     port: 3306,
-    database: "fastadmin",
-    user: "root",
-    password: "root",
+    database: 'db_lime_cup',
+    user: 'root',
+    password: 'root',
   },
-  genTables: ["fa_admin"],
-};
+  genTables: ['device'],
+}
