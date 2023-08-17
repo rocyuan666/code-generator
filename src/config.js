@@ -19,6 +19,6 @@ export default {
     password: 'root',
   },
   projectName: 'xxx项目',
-  // genTables: '*',
-  genTables: ['device'],
+  genTables: '*',
+  // genTables: ['device'],
 }
