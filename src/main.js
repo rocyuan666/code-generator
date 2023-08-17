@@ -10,6 +10,7 @@ async function main() {
     const isGenerate = generateTableNames.includes(table.TABLE_NAME);
     if (!isGenerate) continue;
     const columns = await Db.getColumns(table.TABLE_NAME);
+    // 模板数据
     const data = {
       DB: {
         table,
@@ -21,6 +22,8 @@ async function main() {
     };
     // 生成vue文件
     renderTemplate(templatePath("index.vue3.ejs"), data, outFilePath(`vue/view/${table.TABLE_NAME}/index.vue`));
+    // 生成js文件
+    renderTemplate(templatePath("api.ejs"), data, outFilePath(`vue/api/${table.TABLE_NAME}.js`));
   }
 }
 await main();
