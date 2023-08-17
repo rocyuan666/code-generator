@@ -21,11 +21,11 @@ export async function renderTemplate(path, data, outFilePath) {
 
 /**
  * 模板路径生成
- * @param {String} tpPath - 基于/src/template的路径
+ * @param {String} tpPath - 基于/template的路径
  * @returns {String} - 完整的模板目录
  */
 export function templatePath(tpPath) {
-  return path.join(__dirname, "../", "template", tpPath);
+  return path.join(__dirname, "../../", "template", tpPath);
 }
 
 /**
