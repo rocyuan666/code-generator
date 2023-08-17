@@ -5,8 +5,7 @@
   "type": "module",
   "main": "src/main.js",
   "scripts": {
-    "start": "rimraf out && node src/main.js",
-    "dev": "nodemon rimraf out &&  node src/main.js"
+    "start": "rimraf out && node src/main.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +16,6 @@
     "mysql2": "^3.6.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1",
     "rimraf": "^5.0.1"
   }
 }
