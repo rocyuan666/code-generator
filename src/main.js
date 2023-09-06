@@ -23,15 +23,15 @@ async function main() {
         snakeFormatHump,
       },
     }
-    // 生成vue文件
+    // 生成vue3文件
     renderTemplate(
-      templatePath('index.vue3.ejs'),
+      templatePath('vue3/index.vue.ejs'),
       data,
       outFilePath(`${cfg.projectName}/vue/view/${snakeFormatHump(table.TABLE_NAME)}/index.vue`),
     )
-    // 生成js文件
+    // 生成js api文件
     renderTemplate(
-      templatePath('api.ejs'),
+      templatePath('js/api.ejs'),
       data,
       outFilePath(`${cfg.projectName}/vue/api/${snakeFormatHump(table.TABLE_NAME)}.js`),
     )
