@@ -1,0 +1,158 @@
+{
+  "device": {
+    "id": {
+      "label": "id",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    },
+    "code": {
+      "label": "编码",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    },
+    "name": {
+      "label": "名称",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    },
+    "reg_time": {
+      "label": "注册时间",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    },
+    "end_time": {
+      "label": "结束时间",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    },
+    "device_status": {
+      "label": "设备状态",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    },
+    "last_work_time": {
+      "label": "最后工作时间",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    },
+    "last_time": {
+      "label": "最后修改时间",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    },
+    "client": {
+      "label": "客户",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    },
+    "model": {
+      "label": "手机号",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    },
+    "config_json": {
+      "label": "配置项",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    },
+    "add_time": {
+      "label": "添加时间",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    },
+    "update_time": {
+      "label": "更新时间",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    },
+    "memo": {
+      "label": "备注",
+      "add": true,
+      "edit": false,
+      "list": true,
+      "search": false,
+      "required": true,
+      "query": 0,
+      "display": "input",
+      "dict": 0
+    }
+  }
+}

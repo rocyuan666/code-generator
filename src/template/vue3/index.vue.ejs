@@ -6,7 +6,7 @@
     <ul>
       <%_ for(let i = 0; i < columns.length; i++) { _%>
       <li>
-        <span>字段描述: <%= columns[i].COLUMN_COMMENT %></span>
+        <span>字段描述: <%= extInfo[columns[i].COLUMN_NAME]['label'] %></span>
         <span>字段名: <%= columns[i].COLUMN_NAME %></span>
         <span>字段类型: <%= columns[i].DATA_TYPE %></span>
       </li>
